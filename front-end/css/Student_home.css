@@ -1,0 +1,40 @@
+.navbar
+{
+    padding: 0% 5% !important;
+}
+
+body
+{
+    background-color: #c0d5e7 !important;
+}
+
+.non-navbar
+{
+    height: 100%;
+    padding: 5%;
+}
+
+.card-header
+{
+    background-color: #3660ad !important;
+}
+
+.transparent-h5
+{
+    color: #3660ad !important;
+}
+
+.card-group
+{
+    margin: 5% 0%;
+}
+
+.third-row-TRANSPARENT
+{
+    color: white !important;
+}
+
+
+
+
+

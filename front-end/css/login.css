@@ -1,0 +1,64 @@
+
+.upper-container
+{
+    position: absolute;
+    top: 0%;
+    padding-left: 15%;
+    padding-top: 20%;
+    padding-right: 5%;
+    height: 100%;
+    display: inline;
+    background-color: #1df2e7;
+    opacity: 0.6;
+}
+
+.back-image
+{
+    opacity: 0;
+}
+
+.outside-image
+{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    display: inline;
+}
+
+.heading
+{
+    padding-top: 8%;
+    margin-left: 55%;
+    padding-left: 12%;
+}
+
+.btn-primary
+{
+    border-color: #1df2e7 !important;
+    background-color: #1df2e7 !important;
+ 
+}
+
+.email-password
+{
+    padding-top: 5%;
+    margin-left: 55%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.outside-container
+{
+    background-color: whitesmoke;
+    margin: 4.5% 7%;
+    margin-top: 6%;
+    padding: 5%;
+    height: 100%;
+    position: relative;
+}
+
+.submit-button
+{
+    padding-top: 10%;
+}
+

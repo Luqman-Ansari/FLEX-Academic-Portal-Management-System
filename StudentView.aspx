@@ -1,0 +1,261 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="StudentView.aspx.cs" Inherits="StudentView" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student Information Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="shortcut.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="flex.ico">
+    <link rel="stylesheet" href="front-end/css/gridView.css">
+    <link rel="stylesheet" href="front-end/css/Student_home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="flex.ico" width="30" height="30" alt="FLEX">FLEX</a>
+        <button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="StudentView.aspx">Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="StudentAttendance.aspx">Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studentTranscript.aspx">Transcript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="studentEvaluation.aspx">Evaluation Marks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedbackFin.aspx">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <form id="form1" runat="server">
+        <div class="non-navbar">
+            <h2>Student Profile</h2>
+
+            <div class="card-group">
+                <div class="card">
+                    <h5 class="card-header">UNIVERISTY INFORMATION</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Roll No:
+                                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Section: BCS-213E</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h5 class="card-header transparent-h5">.</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Degree: BS(CS)</h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Campus: Islamabad</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h5 class="card-header transparent-h5">.</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Batch: Fall 2021</h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Status: Current</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <h5 class="card-header">PERSONAL INFORMATION</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Name:
+                                <asp:Label ID="lblFName" runat="server" Text=""></asp:Label>
+                                <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
+                                <asp:Label ID="lblLName" runat="server" Text=""></asp:Label>
+                            </h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Gender: Male</h6>
+                        </div>
+
+                        <div class="third-row third-row-TRANSPARENT">
+                            <h6>Email:</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h5 class="card-header transparent-h5">.</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Date Of Birth:
+                                <asp:Label ID="lblDoB" runat="server" Text=""></asp:Label></h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>CNIC:
+                                <asp:Label ID="lblCNIC" runat="server" Text=""></asp:Label></h6>
+                        </div>
+
+                        <div class="third-row">
+                            <h6>Email: 
+                                <asp:Label ID="lblEmail" runat="server" Text=""></asp:Label></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h5 class="card-header transparent-h5">.</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Blood Group: -</h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Nationality: Pakistani</h6>
+                        </div>
+
+                        <div class="third-row">
+                            <h6>Mobile No: 0304-9983018</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <h5 class="card-header">UNIVERISTY INFORMATION</h5>
+                    <div class="card-body">
+                        <div class="upper-row">
+                            <h6>Address: P-102, Street No. 4, Younas Town, Satiana Road, Faisalabad.</h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Home Phone:
+                                <asp:Label ID="lblPhone" runat="server" Text=""></asp:Label></h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Home Phone: </h6>
+                        </div>
+
+                        <div class="lower-row">
+                            <h6>Home Phone:</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h5 class="card-header transparent-h5">.</h5>
+                    <div class="card-body">
+                        <div class="upper row">
+                            <h6>Degree: BS(CS)</h6>
+                        </div>
+
+                        <div class="lower row">
+                            <h6>Campus: Islamabad</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h5 class="card-header transparent-h5">.</h5>
+                    <div class="card-body">
+                        <div class="upper row">
+                            <h6>Batch: Fall 2021</h6>
+                        </div>
+
+                        <div class="lower row">
+                            <h6>Status: Current</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                #chartContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 300px;
+                }
+            </style>
+
+            <div id="chartContainer">
+                <asp:Chart ID="BarChart" runat="server" Width="400" Height="300">
+                    <Series>
+                        <asp:Series Name="GPASeries" ChartType="Column"></asp:Series>
+                    </Series>
+                    <ChartAreas>
+                        <asp:ChartArea Name="ChartArea"></asp:ChartArea>
+                    </ChartAreas>
+                </asp:Chart>
+            </div>
+            <div style="align-items:center; justify-content:center; display:flex; margin-top:-24px">
+                <asp:Label ID="gpa_c" runat="server" Text="GPA Comparison"></asp:Label>
+            </div>
+
+            <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red"></asp:Label>
+        </div>
+
+
+
+
+
+
+
+        <%--        <div style="width: 1479px; margin-left: 80px">
+            <h1>Person Details</h1>
+            <hr />
+            <asp:Label ID="lblCNIC" runat="server" Text="&lt;b&gt;CNIC:&lt;/b&gt; "></asp:Label><br />
+            <asp:Label ID="lblFName" runat="server" Text="&lt;b&gt;First Name:&lt;/b&gt; "></asp:Label><br />
+            <asp:Label ID="lblLName" runat="server" Text="&lt;b&gt;Last Name:&lt;/b&gt; "></asp:Label><br />
+            <asp:Label ID="lblDoB" runat="server" Text="&lt;b&gt;Date of Birth:&lt;/b&gt; "></asp:Label><br />
+            <asp:Label ID="lblPhone" runat="server" Text="&lt;b&gt;Phone Number:&lt;/b&gt; "></asp:Label><br />
+            <asp:Label ID="lblEmail" runat="server" Text="&lt;b&gt;Email:&lt;/b&gt; "></asp:Label><br />
+            <hr />
+
+            <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red"></asp:Label>
+        </div>--%>
+    </form>
+</body>
+</html>

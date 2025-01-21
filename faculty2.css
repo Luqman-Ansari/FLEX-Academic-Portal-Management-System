@@ -1,0 +1,26 @@
+.navbar
+{
+    padding: 0% 5% !important;
+}
+
+body
+{
+    
+    background-color: #c0d5e7 !important;
+}
+
+.non-navbar
+{
+    height: 100%;
+    padding: 5%;
+}
+
+h1
+{
+    margin-bottom: 4%;
+}
+
+.table
+{
+    margin-top: 5%;
+}
